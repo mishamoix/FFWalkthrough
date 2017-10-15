@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  FFWalkthrough
+//  WalkThrough
 //
 //  Created by Mikhail Malyshev on 01.10.17.
 //  Copyright © 2017 Mikhail Malyshev. All rights reserved.

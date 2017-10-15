@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FFWalkthrough.xcscheme</key>
+		<key>WalkThrough.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A7D7A9D1F811B3F00077002</key>
+		<key>0A4EAE171F81894E00434B91</key>
 		<dict>
 			<key>primary</key>
 			<true/>

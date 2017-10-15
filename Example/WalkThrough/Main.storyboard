@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3lk-p9-VX2">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NavBar-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FFWalkthrough" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="x4f-jj-Ldb">
+                                <rect key="frame" x="8" y="72" width="304" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEz-ue-2M7">
+                                <rect key="frame" x="255" y="130" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable something" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVe-4L-ADo">
+                                <rect key="frame" x="110" y="135" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kPe-Oh-u2d">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="Gip-5Q-bEo"/>
+                                    <tabBarItem systemItem="more" id="3CV-4A-9z4"/>
+                                </items>
+                            </tabBar>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0gN-kX-GOh">
+                                <rect key="frame" x="6" y="195" width="308" height="31"/>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="bqB-ew-l9r">
+                                <rect key="frame" x="30" y="391" width="46" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kVe-4L-ADo" firstAttribute="centerY" secondItem="VEz-ue-2M7" secondAttribute="centerY" id="86j-89-qAU"/>
+                            <constraint firstItem="0gN-kX-GOh" firstAttribute="top" secondItem="kVe-4L-ADo" secondAttribute="bottom" constant="39" id="9e4-2e-dbc"/>
+                            <constraint firstItem="x4f-jj-Ldb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="DG2-5g-sLM"/>
+                            <constraint firstItem="VEz-ue-2M7" firstAttribute="top" secondItem="x4f-jj-Ldb" secondAttribute="bottom" constant="30" id="G0X-D4-32d"/>
+                            <constraint firstItem="0gN-kX-GOh" firstAttribute="leading" secondItem="x4f-jj-Ldb" secondAttribute="leading" id="Gr3-xc-joe"/>
+                            <constraint firstItem="VEz-ue-2M7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ohd-7b-Eli"/>
+                            <constraint firstAttribute="trailing" secondItem="x4f-jj-Ldb" secondAttribute="trailing" constant="8" id="Qwe-tJ-v4f"/>
+                            <constraint firstItem="0gN-kX-GOh" firstAttribute="trailing" secondItem="x4f-jj-Ldb" secondAttribute="trailing" id="Vgw-fL-yoE"/>
+                            <constraint firstItem="VEz-ue-2M7" firstAttribute="leading" secondItem="kVe-4L-ADo" secondAttribute="trailing" constant="8" id="jr7-9G-GCA"/>
+                            <constraint firstItem="x4f-jj-Ldb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="nhd-p9-bfa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="NavBar" id="jVg-ge-IAN"/>
+                    <connections>
+                        <outlet property="image" destination="bqB-ew-l9r" id="aUq-ni-h2R"/>
+                        <outlet property="segmentControl" destination="x4f-jj-Ldb" id="TUZ-4g-NDC"/>
+                        <outlet property="slider" destination="0gN-kX-GOh" id="kam-CV-rRd"/>
+                        <outlet property="switcher" destination="VEz-ue-2M7" id="8xB-te-JuR"/>
+                        <outlet property="tabbar" destination="kPe-Oh-u2d" id="Gmp-SO-mh3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="792.95352323838085"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rLt-Ib-6lP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3lk-p9-VX2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eLy-gc-G22">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ee4-0i-C05"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVd-lp-x2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127.2" y="792.95352323838085"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coins" width="48" height="48"/>
+    </resources>
+</document>
